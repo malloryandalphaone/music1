@@ -2,7 +2,6 @@ const { Client, RichEmbed } = require("discord.js");
 const yt_api_key = "AIzaSyDV2JNcnCiCEW99ON7vvwBN5JkDWaIXkXc"
 const client = new Client({ disableEveryone: true})
 const ytdl = require("ytdl-core");
-const convert = require("hh-mm-ss")
 const fetchVideoInfo = require("youtube-info");
 const bot = require('./package.json');
 const simpleytapi = require('simple-youtube-api')
