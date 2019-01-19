@@ -11,8 +11,11 @@ client.login(process.env.BOT);
 var guilds = {};
 
 /////////////////////////////////////////////////////////////////
-client.on('ready', () => client.user.setActivity(`1play , 1search.`, {type: "LISTENING"}))
-client.setStatus('dnd');
+client.on("ready", () => {
+client.user.setStatus('dnd');
+  console.log("Reeebel | Logged in! Server count: ${client.guilds.size}");
+  client.user.setActivity("1play , 1search",{type: 'LISTENING'});
+});
 /////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////
  
